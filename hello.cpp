@@ -1,10 +1,10 @@
-#include <print>
-#include <string>
+export module hello;
 
-void println(std::string a, std::string b) {
-  std::println("{} {}", a, b);
-}
+import <print>;
+import <string>;
 
-int main(int argc, char* argv[]) {
-  println("Hello", "world!");
+export namespace hello {
+  void println(std::string a, std::string b) {
+    std::println("{} {}", a, b);
+  }
 }
